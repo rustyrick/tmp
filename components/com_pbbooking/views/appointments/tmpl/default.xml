@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Front End Self Service Interface" hidden="false">
+		<message>
+			Front End Self Service Interface
+		</message>
+	</layout>
+	<state>
+		<name>PBBooking Layout</name>
+		<description>Front End Self Service Interface</description>
+	</state>
+</metadata>

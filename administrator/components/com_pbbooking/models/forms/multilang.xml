@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+
+        <field type="hidden" name="id"/>
+        <field type="hidden" name="original_id"/>
+        <field type="hidden" name="messagename"/>
+        <field name="type" type="list" required="1" label="COM_PBBOOKING_MULTILANG_OVERRIDE_TYPE" label-class="control-label" onchange="loadPrimaryValues()">
+            <option value=""></option>
+            <option value="calendar">COM_PBBOOKING_RESOURCES_DISPLAY</option>
+            <option value="customfield">COM_PBBOOKIONG_CUSTOMFIELDS</option>
+            <option value="service">COM_PBBOOKING_SERVICE_LABEL</option>
+            <option value="message">COM_PBBOOKING_MULTILANG_OVERRIDE_TYPE_MESSAGE</option>
+            <option value="subject">COM_PBBOOKING_MULTILANG_OVERRIDE_TYPE_SUBJECT</option>
+        </field>
+        <field name="primarylangvalue" type="list" label="COM_PBBOOKING_FIELD_NAME" label-class="control-label" onchange="updatePrimaryValue()">
+            <option value="">JGLOBAL_SELECT_AN_OPTION</option>
+        </field>
+        <field name="primaryvalue" type="textarea" readonly="1" label="COM_PBBOOKING_MULTILANG_OVERRIDE_PRIMARY_VALUE" label-class="control-label"/>    
+        <field name="langtag" type="list" required="1" label="COM_PBBOOKING_MULTILANG_OVERRIDE_LANGUAGE_TAG" label-class="control-label">
+        </field>
+        <field name="data" type="textarea" class="input-xxlarge" label="COM_PBBOOKING_MULTILANG_OVERRIDE_DATA" label-class="control-label"/>
+    </fields>
+</form>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+
+        <field name="id" type="hidden" />
+
+
+        <field name="enable_reminders" type="list" label="COM_PBBOOKING_REMINDERS_ENABLE" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="reminder_days_in_advance" type="text" class="input-mini" label="COM_PBBOOKING_REMINDER_DAYS_IN_ADVANCE" label-class="control-label"/>
+        <field name="reminder_email_subject" type="text" class="input-xxlarge" label="COM_PBBOOKING_REMINDER_EMAIL_SUBJECT" label-class="control-label"/>
+        <field name="reminder_email_body" type="textarea" class="input-xxlarge" rows="20" label="COM_PBBOOKING_REMINDER_EMAIL_BODY" label-class="control-label"/>
+           
+
+    </fields>
+
+
+
+</form>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field type="hidden" name="id"/>
+        <field type="text" name="name" required="1" label="COM_PBBOOKING_CAL_NAME" label-class="control-label" class="input-xxlarge"/>
+        <field type="hidden" name="hours" required="1" label="COM_PBBOOKING_CALENDAR_OVERRIDE_TRADING_TIMES" label-class="control-label"/>
+        <field type="text" name="email" label="COM_PBBOOKING_CAL_OVERRIDE_EMAIL" label-class="control-label"/>
+        <field name="color" type="color" required="1" default="#000000" label="COM_PBBOOKING_CAL_COLOR_CODING" label-class="control-label"/>
+        <field name="ordering" type="text" label-class="control-label" label="COM_PBBOOKING_CAL_ORDERING" default="0" required="1"/>            
+    </fieldset>
+
+    <fieldset name="integration">
+        <field type="list" name="enable_google_cal" required="1" label-class="control-label" label="COM_PBBOOKING_CALENDAR_CONFIGURATION_ENABLE_GOOGLE_CAL">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="gcal_id" type="text" label="COM_PBBOOKING_CAL_GCAL_CALID" label-class="control-label"/>
+    </fieldset>
+
+    <fieldset name="group_bookings">
+        <field name="groupbookings" type="list" label="COM_PBBOOKING_RESOURCE_GROUP_CLASS" label-class="control-label">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="groupclass_max" type="text" class="input-mini" label="COM_PBBOOKING_RESOURCE_GROUP_CLASS_MAX" label-class="control-label" default="1"/>
+        <field name="calendar_schedule" type="hidden"/>
+    </fieldset>
+
+
+
+    <!--<fieldset name="tradinghours_modal">
+        <field name="status" type="text" label="Trading Day"/>
+        <field name="open_time" type="text" label="Opening Time"/>
+        <field name="close_time" type="text" label="Closing Time"/>
+    </fieldset>-->
+
+    <fieldset name="languages">
+    </fieldset>
+</form>

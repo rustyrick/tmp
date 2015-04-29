@@ -1,0 +1,277 @@
+table#pbbooking {
+	border-spacing:0px;
+	border-collapse:collapse;
+	border:0px;
+	width:350px;
+}
+
+#calendar {
+
+}
+
+#pbbooking th,td {
+	height:32px;
+	width:50px;
+	text-align:center;
+	border:0px;
+	padding:0px;
+}
+
+#pbbooking th {
+	color:#e6e6e6;
+}
+
+
+
+
+.calendars_left {
+	float:left;
+	width:50%;
+}
+
+.calendars_right {
+	float:left;
+	margin-left:20px;
+}
+
+.pbbooking-reservation-field-label {
+	float:left;
+	font-weight:bold;
+}
+
+.pbbooking-reservation-field {
+	float:left;
+	min-width:50px;
+	margin-bottom:5px;
+}
+
+.service-price {
+	font-weight:bold;
+}
+
+.slot-label {
+	float:left;
+	font-weight:bold;
+	width:75px;
+}
+
+.slot-radio {
+	height:20px;
+}
+
+input.error-field {
+	border:2px solid red;
+}
+
+.error-message {
+	border:1px solid red;
+	background-color:#FBE6F2;
+	width:250px;
+	margin: 5px auto 5px auto;
+	padding:5px;
+	text-align:center;
+}
+
+td.selected_day {
+	background-color:yellow;
+}
+
+/* new classes in 2.2 */
+
+.error-label {
+	color:red;
+}
+
+
+/* a new class to handle long calendars */
+table.long-cal td {
+	height:28px;
+}
+
+#pbbooking-timeslot-listing > table,
+#pbbooking-timeslot-listing > table tbody tr,
+#pbbooking-timeslot-listing > table tbody td {
+	border:0px solid;
+}
+
+
+/*new css for 2.3 */
+.pbbooking-notifications-active {
+	background-color: #C9F3C4;
+	border:1px solid green;
+	padding:10px;
+	margin:10px;
+}
+
+
+/*new css for 2.4*/
+#pbbooking-paypal-form {
+	text-align:center;
+}
+
+
+
+/* builds calendar from slices to better scale in size and 5 wk months*/
+#pbbooking td.pbbooking-cal-left-body {
+	background:url('../images/calslices/td-content-left.svg') repeat-y;
+	background-position: right;
+	min-width:59px;
+	border:0px;
+
+}
+
+#pbbooking td.pbbooking-cal-left-header {
+	background:url('../images/calslices/td-header-left.svg') repeat-y;
+	background-position: right;
+	min-width:44px;
+	border:0px;
+}
+
+td.gap-row {
+	height:9px;
+	max-height:9px;
+	border-spacing:0px;
+}
+
+#pbbooking td.pbbooking-gap-row-left {
+	background:url('../images/calslices/td-gap-row-left.svg') no-repeat;
+	background-position: right;
+}
+
+#pbbooking td.pbbooking-gap-row-right {
+	background:url('../images/calslices/td-gap-row-right.svg') no-repeat;
+	background-position: left;
+}
+
+#pbbooking td.pbbooking-gap-row-center {
+	background:url('../images/calslices/td-gap-row-center.svg');
+}
+
+#pbbooking td.pbbooking-cal-right-header {
+	background:url('../images/calslices/td-header-right.svg') repeat-y;
+	border:0px;
+	background-position:left;
+}
+
+#pbbooking th.pbbooking-cal-center-header {
+	background:url('../images/calslices/td-cal-center-header.svg');
+	border-top:0px;
+	border-bottom:0px;
+}
+
+#pbbooking td.pbbooking-cal-right-body {
+	background:url('../images/calslices/td-cal-right-body.svg') repeat-y;
+	background-position:left;
+	border:0px;
+	min-width:71px;
+	width:71px;
+}
+
+#pbbooking td.pbbooking-content {
+	background:url('../images/calslices/td-content-fill-slice.svg');
+}
+
+td.pbbooking-cal-top-left {
+	background:url('../images/calslices/td-cal-top-left.svg') no-repeat;
+	background-position:bottom right;
+	max-height:92px;
+	height:92px;
+	padding:0px;
+}
+
+td.pbbooking-cal-top-right {
+	background:url('../images/calslices/td-cal-top-right.svg') no-repeat;
+	background-position:bottom left;
+	max-height:92px;
+	height:92px;
+	padding:0px;
+}
+
+td.pbbooking-cal-top-rings {
+	text-align:center;
+	height:92px;
+	min-width:220px;
+	width:220px;
+	background:url('../images/calslices/td-cal-top-rings.svg') no-repeat;
+	background-position: bottom;
+	padding:0px;
+}
+
+td.pbbooking-cal-bottom-left {
+	background:url('../images/calslices/td-bottom-left.svg') no-repeat;
+	min-height:86px;
+	height:86px;
+	padding:0px;
+	background-position: right;
+}
+td.pbbooking-cal-bottom-center {
+	background:url('../images/calslices/td-bottom-slice.svg') repeat-x;
+}
+td.pbbooking-cal-bottom-right {
+	background:url('../images/calslices/td-bottom-right.svg') no-repeat;
+}
+
+.month-heading {
+	font-size:1.7em;
+}
+
+#pbbooking tr,td {
+	border:0px solid;
+}
+
+#pbbooking td.fully-booked {
+	background-color:red;
+}
+
+
+/* new in 2.4.3 */
+/* defines survey layouts */
+table#pbbooking-survey-table {
+	border-collapse: collapse;
+	width:90%;
+	margin:0px auto;
+}
+
+table#pbbooking-survey-table td {
+	padding:5px;
+	text-align:left;
+}
+
+table#pbbooking-survey-table input {
+	margin:5px;
+}
+
+table#pbbooking-survey-table textarea {
+	width:400px;
+	height:200px;
+}
+
+
+/* new in 2.4.3.1 */
+
+table.pbbooking-appointment-table td,
+table.pbbooking-appointment-table th {
+	padding:5px;
+}
+
+table.pbbooking-appointment-table th {
+	text-align:center;
+}
+
+table.pbbooking-appointment-table {
+	width:90%;
+}
+
+/* tries to fix beez3 templates */
+
+table th,table td {
+	padding: 0px;
+	border-top: 0px solid #ddd;
+	/*line-height: 0em;*/
+	vertical-align:middle;
+	text-align:center;
+}
+
+input[type=text].error-field {
+	border:2px solid red;
+}

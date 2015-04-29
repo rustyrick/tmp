@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+
+        <field name="id" type="hidden" />
+        <field name="block_start_date" type="pbdtpicker" required="1" class="input-medium" label="COM_PBBOOKING_BLOCK_START" label-class="control-label" />
+        <field name="block_end_date" type="pbdtpicker" required="1" class="input-medium" label="COM_PBBOOKING_BLOCK_END" label-class="control-label"/>
+        <field name="block_note" type="textarea" class="input-xxlarge" label="COM_PBBOOKING_BLOCK_NOTE" label-class="control-label"/>
+
+        <field name="calendars" type="list" required="1" label="COM_PBBOOKING_SERVICE_LINKED_CALENDAR" multiple="true">
+        </field>
+
+        <field name="r_int" type="text" class="input-mini" label="COM_PBBOOKING_EVENT_RECUR_INT" label-class="control-label"/>
+        <field name="r_freq" type="list" label="COM_PBBOOKING_EVENT_RECUR_FREQ">
+            <option value="days">COM_PBBOOKING_EVENT_RECUR_DAYS</option>
+            <option value="weeks">COM_PBBOOKING_EVENT_RECUR_WEEKS</option>
+            <option value="months">COM_PBBOOKING_EVENT_RECUR_MONTHS</option>
+            <option value="years">COM_PBBOOKING_EVENT_RECUR_YEARS</option>
+        </field>
+        <field name="r_end" type="pbdtpicker" class="input-medium" label="COM_PBBOOKING_EVENT_RECUR_END" label-class="control-label"/>
+
+    </fields>
+
+
+</form>

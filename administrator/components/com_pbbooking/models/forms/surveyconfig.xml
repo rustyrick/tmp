@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+
+        <field name="id" type="hidden" />
+        <field name="testimonial_questions" type="hidden"/>
+
+
+        <field name="enable_testimonials" type="list" label="COM_PBBOOKING_TESTIMONIAL_ENABLE" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field name="testimonial_days_after" type="text" class="input-mini" label="COM_PBBOOKING_TESTIMONIAL_EMAILS_DAYS_AFTER" label-class="control-label"/>
+        <field name="testimonial_email_subject" type="text" class="input-xxlarge" label="COM_PBBOOKING_TESTIMONIAL_EMAIL_SUBJECT" label-class="control-label"/>
+        <field name="testimonial_email_body" type="textarea" class="input-xxlarge" rows="20" label="COM_PBBOOKING_TESTIMONIAL_EMAIL_BODY" label-class="control-label"/>               
+
+    </fields>
+
+
+
+</form>

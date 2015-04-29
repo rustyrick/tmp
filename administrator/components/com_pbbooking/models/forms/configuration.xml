@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="messages">
+        <field name="email_subject" type="text" required="1" class="input-xxlarge" label="COM_PBBOOKING_CONFIG_EMAIL_SUBJECT" label-class="control-label"/>
+        <field name="email_body" type="textarea" required="1" class="input-xxlarge" rows="10" label="COM_PBBOOKING_CONFIG_EMAIL_BODY" label-class="control-label"/>
+        <field name="auto_validated_appt_email_subject" type="text" required="1" class="input-xxlarge" label="COM_PBBOOKING_CONFIG_AUTOVALIDATION_SUBJECT" label-class="control-label"/>
+        <field name="auto_validated_appt_body" type="textarea" class="input-xxlarge" rows="10" label="COM_PBBOOKING_CONFIG_AUTO_VALIDATION_CLIENT_MESSAGE" label-class="control-label"/>
+        <field name="admin_validation_pending_email_subject" type="text" required="1" class="input-xxlarge" label="COM_PBBOOKING_CONFIG_ADMINVALIDATION_PENDING_SUBJECT" label-class="control-label"/>
+        <field name="admin_validation_pending_email_body" type="textarea" class="input-xxlarge" rows="10" label="COM_PBBOOKING_CONFIG_ADMINVALIDATION_PENDING_MESSAGE" label-class="control-label"/>
+        <field name="admin_validation_confirmed_email_subject" type="text" required="1" class="input-xxlarge" label="COM_PBBOOKING_CONFIG_ADMINVALIDATION_CONFIRMED_SUBJECT" label-class="control-label"/>
+        <field name="admin_validation_confirmed_email_body" type="textarea" class="input-xxlarge" rows="10" label="COM_PBBOOKING_CONFIG_ADMINVALIDATION_CONFIRMED_MESSAGE" label-class="control-label"/>
+        <field name="admin_paypal_confirm_subject" type="text" required="1" class="input-xxlarge" label="COM_PBBOOKING_PAYPAL_ADMIN_NEW_PAID_BOOKING_SUBJECT" label-class="control-label"/>
+        <field name="admin_paypal_confirm" type="textarea" class="input-xxlarge" rows="10" label="COM_PBBOOKING_PAYPAL_ADMIN_NEW_PAID_BOOKING" label-class="control-label"/>
+        
+        <field name="client_paypal_confirm_subject" type="text" required="1" class="input-xxlarge" label="COM_PBBOOKING_PAYPAL_CLIENT_EMAIL_SUBJECT" label-class="control-label"/>
+        <field name="client_paypal_confirm" type="textarea" class="input-xxlarge" label="COM_PBBOOKING_PAYPAL_CLIENT_EMAIL_BODY" label-class="control-label"/>
+        <field name="admin_pending_cancel_subject" type="text" class="input-xxlarge" label="COM_PBBOOKING_ADMIN_PENDING_CANCEL_SUBJECT" label-class="control-label"/>
+        <field name="admin_pending_cancel_body" type="textarea" class="input-xxlarge" rows="10" label="COM_PBBOOKING_ADMIN_PENDING_CANCEL_BODY" label-class="control-label"/>
+        <field name="bcc_admin" type="list" required="1" label="COM_PBBOOKING_CONFIG_BCC_ADMIN">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="notification_email" type="text" class="input-xxlarge" label="COM_PBBOOKING_CONFIG_NOTIFICATION_EMAIL" label-class="control-label"/>
+    </fieldset>
+
+    <fieldset name="validation">
+        <field name="validation" type="list" required="1" label="COM_PBBOOKING_ADMIN_VALIDATION">
+            <option value="admin">COM_PBBOOKING_ADMIN_VALIDATION_ADMIN</option>
+            <option value="auto">COM_PBBOOKING_ADMIN_VALIDATION_AUTO</option>
+            <option value="client">COM_PBBOOKING_ADMIN_VALIDATION_CLIENT</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="view">
+        <field name="time_increment" type="text" required="1" class="input-mini" label="COM_PBBOOKING_CONFIG_TIMEINCREMENT" label-class="control-label"/>
+        <field name="show_link" type="list" required="1" label="COM_PBBOOKING_CONFIG_SHOW_LINK">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="show_prices" type="list" required="1" label="COM_PBBOOKING_CONFIG_SHOW_PRICES">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="calendar_start_day" type="list" required="1" label="COM_PBBOOKING_CONFIG_START_DAY" label-class="control-label">
+            <option value="0">SUNDAY</option>
+            <option value="1">MONDAY</option>
+            <option value="2">TUESDAY</option>
+            <option value="3">WEDNESDAY</option>
+            <option value="4">THURSDAY</option>
+            <option value="5">FRIDAY</option>
+            <option value="6">SATURDAY</option>
+        </field>
+        <field name="show_busy_front_end" type="list" required="1" label="COM_PBBOOKING_CONFIG_SHOWBUSYFRONTEND" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="manage_fields" type="list" label="COM_PBBOOKING_CONFIG_FIELDS_IN_MANAGE_DIARIES" multiple="true" multiselect="true" label-class="control-label">
+        </field>
+        <field name="enable_shifts" type="list" label="COM_PBBOOKING_CONFIG_ENABLE_SHIFTS" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>   
+        <field name="currency_symbol_before" type="list" label="COM_PBBOOKING_CONFIG_CURRENCY_SYMBOL_POSITON" label-class="control-label">
+            <option value="1">COM_PBBOOKING_CONFIG_CURRENCY_SYMBOL_BEFORE</option>
+            <option value="0">COM_PBBOOKING_CONFIG_CURRENCY_SYMBOL_AFTER</option>
+        </field>
+
+        <field name="multi_page_checkout" type="list" label="COM_PBBOOKING_CONFIG_CHECKOUT_STYLE" label-class="control-label">
+            <option value="1">COM_PBBOOKING_CONFIG_CHECKOUT_STYLE_1</option>
+            <option value="0">COM_PBBOOKING_CONFIG_CHECKOUT_STYLE_0</option>
+        </field>
+        <field name="single_page_block_days_master_trading_hours" type="list" label="COM_PBBOOKING_CONFIG_SINGLE_PAGE_BLOCK_DAYS_MASTER_TRADING_HOURS" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="disable_announcements" type="list" label="COM_PBBOOKING_CONFIG_DISABLE_ANNOUNCEMENTS" label-class="control-labels">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="prevent_bookings_within" type="text" class="input-mini" label="COM_PBBOOKING_PREVENT_BOOKING_WITHIN" label-class="control-label"/>
+        <field name="allow_booking_max_days_in_advance" type="text" class="input-mini" label="COM_PBBOOKING_ALLOW_BOOKING_MAX_DAYS_IN_ADVANCE" label-class="control-label"/>
+        <field name="disable_pending_bookings" type="text" class="input-mini" label="COM_PBBOOKING_DISABLE_PENDING_BOOKING" label-class="control-label"/>
+        <field name="select_calendar_individual" type="list" label="COM_PBBOOKING_SELECT_CALENDAR_INDIVIDUAL_LABEL" label-class="control-label">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="calendar_color" type="color" class="input-mini" label="COM_PBBOOKING_SELECT_CALENDAR_HEADER_COLOUR" label-class="control-label"/>
+        <field name="enable_recaptcha" type="list" required="1" label="COM_PBBOOKING_ENABLE_RECAPTCHA" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+
+
+    </fieldset>
+
+    <fieldset name="integrations">
+        <field name="enable_cron" type="list" label="COM_PBBOOKING_ENABLE_CRON" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+
+        <field name="enable_selfservice" type="list" label="COM_PBBOOKING_SELFSERVICE_ENABLE" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="self_service_change_notice" type="text" class="input-mini" label="COM_PBBOOKING_SELFSERVICE_HOURS_NOTICE" label-class="control-label"/>
+        <field name="display_past_appointments" type="list" label="COM_PBBOOKING_SELFSERVICE_DISPLAY_PAST_APPOINTMENTS" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="googlecalendar">
+        <field name="enable_google_cal" type="list" label="COM_PBBOOKING_CALENDAR_CONFIGURATION_ENABLE_GOOGLE_CAL" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <!--<field name="path_to_zend" type="text" class="input-xxlarge" label="COM_PBBOOKING_CALENDAR_CONFIGURATION_GOOGLE_PATH" label-class="control-label"/>-->
+        <field name="sync_future_events" type="list" label="COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS" label-class="control-label">
+            <option value="0">COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS_0</option>
+            <option value="1">COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS_1</option>
+            <option value="2">COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS_2</option>
+            <option value="3">COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS_3</option>
+            <option value="4">COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS_4</option>
+            <option value="5">COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS_5</option>
+            <option value="6">COM_PBBOOKING_CONFIG_SYNC_FUTURE_EVENTS_6</option>
+        </field>
+        <field name="sync_google_events_to_pbbooking" type="list" label="COM_PBBOOKING_CONFIG_SYNC_DIRECTION" label-class="control-label">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="google_cal_sync_secret" type="text" class="input-xxlarge" label="COM_PBBOOKING_GOOGLE_CAL_SYNC_SECRET" label-class="control-label"/>
+        <field name="google_max_results" type="text" class="input-mini" label="COM_PBBOOKING_GOOGLE_CAL_MAX_RESULTS" label-class="control-label" default="250"/>
+        <field name="authcode" type="text" class="input-xxlarge" label="COM_PBBOOKING_CAL_GCAL_AUTHCODE" label-class="control-label"/>
+        <field name="authUrl" type="hidden"/>
+    </fieldset>
+
+    <fieldset name="debug">
+        <field name="enable_logging" type="list" required="1" label="COM_PBBOOKING_ENABLE_LOGGING" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="enable_firephp" type="list" label="COM_PBBOOKING_ENABLE_FIREPHP" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="payment">
+        <field name="paypal_api_username" type="text" class="input-xxlarge" label="COM_PBBOOKING_PAYPAL_API_USERNAME" label-class="control-label"/>
+        <field name="paypal_api_password" type="text" class="input-xxlarge" label="COM_PBBOOKING_PAYPAL_API_PASSWORD" label-class="control-label"/>
+        <field name="paypal_api_signature" type="textarea" class="input-xxlarge" label="COM_PBBOOKING_PAYPAL_API_SIGNATURE" label-class="control-label"/>
+        <field name="paypal_currency" type="text" class="input-mini" label="COM_PBBOOKING_PAYPAL_CURRENCY" label-class="control-label"/>
+        <field name="paypal_test" type="list" label="COM_PBBOOKING_PAYPAL_TEST_MODE" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="advanced">
+        <field name="enable_multilanguage" type="list" label="COM_PBBOOKING_ENABLE_MULTILANGUAGE" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="user_offset" type="list" label="COM_PBBOOKING_CONVERT_USER_OFFSET" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="booking_details_template" type="textarea" class="input-xxlarge" label="COM_PBBOOKING_MESSAGE_BOOKING_DETAILS_TABLE" label-class="control-label" rows="10"/>
+
+    </fieldset>
+
+    <fieldset name="hidden">
+        <field name="id" type="hidden"/>
+        <field name="trading_hours" type="hidden"/>
+        <field name="time_groupings" type="hidden"/>
+        <field name="reminder_settings" type="hidden"/>
+        <field name="testimonial_questions" type="hidden"/>
+
+    </fieldset>
+
+  
+</form>

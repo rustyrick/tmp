@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+        <field name="id" type="hidden"/>
+        <field name="fieldname" type="text" class="input-xxlarge" required="1" label="COM_PBBOOKING_FIELDS_NAME" label-class="control-label"/>
+        <field name="fieldtype" type="list" required="1" label="COM_PBBOOKING_FIELDS_TYPE" label-class="control-label">
+            <option value="select">COM_PBBOOKING_FIELD_TYPE_SELECT</option>
+            <option value="text">COM_PBBOOKING_FIELD_TYPE_TEXT</option>
+            <option value="textarea">COM_PBBOOKING_FIELD_TYPE_TEXTAREA</option>
+            <option value="checkbox">COM_PBBOOKING_FIELD_TYPE_CHECKBOX</option>
+            <option value="radio">COM_PBBOOKING_FIELD_TYPE_RADIO</option>
+        </field>
+        <field name="varname" type="text" required="1" label="COM_PBBOOKING_FIELDS_VARNAME" label-class="control-label"/>
+        <field name="is_required" type="list" required="1" label="COM_PBBOOKING_IS_REQUIRED" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        
+        <field name="values" type="textarea" class="input-xxlarge" label="COM_PBBOOKING_CONFIGURATION_TESTIMONIAL_FIELD_VALUES" label-class="control-label"/>
+
+        <field name="is_email" type="list" required="1" label="COM_PBBOOKING_IS_EMAIL" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="is_first_name" type="list" required="1" label="COM_PBBOOKING_IS_FIRST_NAME" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="is_last_name" type="list" required="1" label="COM_PBBOOKING_IS_LAST_NAME" label-class="control-label">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="ordering" type="text" class="input-mini" required="1" label="COM_PBBOOKING_CUSTOMFIELD_ORDER" label-class="control-label"/>
+    </fields>
+</form>

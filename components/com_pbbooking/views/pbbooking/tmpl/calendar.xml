@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard PBBooking Layout" hidden="false">
+		<message>
+			A Standard PBBooking Layout
+		</message>
+	</layout>
+	<state>
+		<name>PBBooking Layout</name>
+		<description>A Standard PBBooking Layout</description>
+	</state>
+</metadata>

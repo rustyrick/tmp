@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_pbbooking">
+	<section name="component">
+		<action name="pbbooking.create" title="COM_PBBOOKING_EVENT_CREATE" description="COM_PBBOOKING_EVENT_CREATE_DESC" />
+		<action name="pbbooking.deleteown" title="COM_PBBOOKING_EVENT_DELETE_OWN" description="COM_PBBOOKING_EVENT_DELETE_OWN_DESC" />
+		<action name="pbbooking.browse" title="COM_PBBOOKING_CALENDAR_BROWSE" description="COM_PBBOOKING_CALENDAR_BROWSE_DESC"/>
+		<action name="pbbooking.managediaries" title="COM_PBBOOKING_ACCESS_MANAGE_DIARIES" description="COM_PBBOOKING_ACCESS_MANAGE_DIARIES_DESC"/>
+		<action name="pbbooking.editconfiguration" title="COM_PBBOOKING_ACCESS_CONFIGURATION" description="COM_PBBOOKING_ACCESS_CONFIGURATION_DESC"/>
+	</section>
+</access>
