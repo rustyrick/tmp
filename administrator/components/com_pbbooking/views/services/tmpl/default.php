@@ -35,7 +35,9 @@ JHtml::_('stylesheet','com_pbbooking/font-awesome/font-awesome.min.css',array(),
                                     <?php echo JHtml::_('grid.id', $i, $item->id); ?>
                             </td>
     
-                            <td align="center"><?php echo htmlspecialchars($item->name);?></td>
+                            <td align="center">
+                            	<a href="?option=com_pbbooking&view=service&layout=edit&id=<?php echo $item->id;?>"><?php echo htmlspecialchars($item->name);?></a>
+                            </td>
                             <td align="center"><?php echo htmlspecialchars($item->duration);?></td>
                             <td align="center"><?php echo htmlspecialchars($item->price);?></td>
                             <td>
