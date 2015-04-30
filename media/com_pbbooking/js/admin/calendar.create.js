@@ -1,14 +1,17 @@
 var calendarhours;
 var classes;
+var bindingCounter = 0;
 
 jQuery(document).ready(function(){
 
     bindHours();
 
     classes = new ClassesModel();
-
-    ko.applyBindings(classes,document.getElementById('ko-classschedule'));
-
+    
+    /* [FNFN] ADDED CHECK AS THIS SCRIPT IS GOING TO BE USED ALSO FOR SERVICES */
+    if(document.getElementById('ko-classschedule') !== null) {
+    	ko.applyBindings(classes,document.getElementById('ko-classschedule'));
+    }
 });
 
 function HoursModel()

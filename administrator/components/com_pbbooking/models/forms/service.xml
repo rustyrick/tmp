@@ -4,6 +4,8 @@
 
         <field name="id" type="hidden" />
         <field name="name" type="text" required="1" class="input-xxlarge" label="COM_PBBOOKING_SERVICE_NAME" label-class="control-label" />
+        <!-- [FNFN] ADDED FORM FIELD FOR SERVICE TIME SETTINGS -->
+        <field type="hidden" name="hours" required="1" label="COM_PBBOOKING_CALENDAR_OVERRIDE_TRADING_TIMES" label-class="control-label"/>
         <field name="duration" type="text" required="1" class="input-mini" label="COM_PBBOOKING_SERVICE_DURATION" label-class="control-label"/>
         <field name="price" type="text" class="input-mini" label="COM_PBBOOKING_SERVICE_PRICE" label-class="control-label"/>
 
@@ -20,8 +22,6 @@
         <field name="min_duration" type="text" class="input-mini" label="COM_PBBOOKING_SERVICE_MIN_DURATION"></field>
 
         <field name="ordering" type="text" class="input-mini" label-class="control-label" label="COM_PBBOOKING_CAL_ORDERING" default="0" required="1"/>                  
-
     </fields>
-
 
 </form>

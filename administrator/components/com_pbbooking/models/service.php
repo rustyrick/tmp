@@ -6,7 +6,6 @@ defined('_JEXEC') or die('Restricted access');
 
 
 
-
 class PbbookingModelService extends JModelAdmin
 
 {
@@ -80,6 +79,22 @@ class PbbookingModelService extends JModelAdmin
                 $data = $this->getItem();
         }
         return $data;
+    }
+    
+    /* [FNFN] ADDED OVERLOADED METHOD FOR GETTING DEFAULT HOURS AS IN CALENDAR */
+    /**
+     * extending the default getItem method to descrypt the google account password and pull the default trading hours.
+     */
+    
+    public function getItem($pk=null)
+    {
+    	$item = parent::getItem($pk);
+    
+    	if (!isset($item->hours)) {
+    		//the item has no trading hours so set based on the default.
+    		$item->hours = $GLOBALS['com_pbbooking_data']['config']->trading_hours;
+    	}
+    	return $item;
     }
 
 

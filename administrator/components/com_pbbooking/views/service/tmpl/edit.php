@@ -31,7 +31,7 @@ $eow = date_create("this Sunday",new DateTimeZone(PBBOOKING_TIMEZONE));
                 <?php echo $field->getControlGroup();?>
             <?php endforeach;?>
 
-        	<fieldset>
+            <!-- [FNFN] ADDED DIV FOR SERVICE DATETIME SETTINGS -->
  			<div id="ko-tradinghours">
             	<legend><?php echo JText::_('COM_PBBOOKING_CALENDAR_OVERRIDE_TRADING_TIMES');?></legend>
                 <!-- this needs to be done manually rather than using JForm to get the layout I want -->
@@ -64,10 +64,10 @@ $eow = date_create("this Sunday",new DateTimeZone(PBBOOKING_TIMEZONE));
                      </tr>
                      <?php $bow->modify('+1 day');?>
                      <?php endwhile;?>
-                    </table>
-                </div>
-            	</fieldset>
-            </div>
+                </table>
+             </div>
+             <!-- [FNFN] END ADDED DIV FOR SERVICE DATETIME SETTINGS -->
+         </div>
     </div>
 
     <input type="hidden" name="task" value="service.edit"/>
